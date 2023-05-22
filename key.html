@@ -1,0 +1,31 @@
+<html>
+<head>
+ <title>Key Events</title>
+ <script>
+  function init()
+  {
+   var panel = document.getElementById('panel')
+   document.addEventListener("keydown", keydown)
+   document.addEventListener("keypress", keypress)
+   document.addEventListener("keyup", keyup)
+  }
+  
+  function keydown()
+  {
+   panel.innerHTML = "Key down<br/>"
+  }
+  function keypress(e)
+  {
+   var c = (window.event) ? e.keyCode : e.which
+   panel.innerHTML += "Key pressed: " + String.fromCharCode(c)
+  }
+  function keyup()
+  {
+   panel.innerHTML += "<br/>Key up"
+  }
+ </script>
+</head>
+<body onload="init()">
+<p id="panel"></p>
+</body>
+</html>

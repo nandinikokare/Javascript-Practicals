@@ -1,0 +1,21 @@
+Write program to add click, mouseover and mouseout events to webpage using JavaScript.
+<html>
+<body>
+   <button id="btn">Click here</button>
+   <p id="para" onmouseover="mouseOver()" onmouseout="mouseOut()">Hover over this Text !</p>
+   <b id="output"></b>
+   <script>
+      var x = document.getElementById("btn");
+x.addEventListener("click", btnClick);
+function mouseOver() {
+         document.getElementById("output").innerHTML += "MouseOver Event" + "<br>";
+      }
+function mouseOut() {
+         document.getElementById("output").innerHTML += "MouseOut Event" + "<br>";
+      }
+function btnClick() {
+         document.getElementById("output").innerHTML += "Click Event" + "<br>";
+      } 
+   </script>
+</body>
+</html>

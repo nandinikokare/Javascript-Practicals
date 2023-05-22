@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>CharAt Method</h2>
+        <input type="text" size="40" onkeypress="myFunction(event)">
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <script> 
+            let text="Hello";
+            let letter=text.charAt(3);
+            document.getElementById("demo").innerHTML= letter;
+        
+        </script>
+        <script>function myFunction(event){
+            var x=event.charcode;
+            document.getElementById("demo").innerHTML="The unicode value is: " + x;
+        }
+    </script>
+    
+    </body>
+</html>

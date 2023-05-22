@@ -1,0 +1,27 @@
+
+<html>
+<head>
+ <title>Check Email ID</title>
+ <script>
+  function checkEmail()
+  {
+   var email = document.getElementById('email').value
+   var regex = /^([a-zA-Z0-9_\.]+)@([a-zA-Z0-9_\.]+)\.([a-zA-Z]{2,5})$/
+   var res = regex.test(email)
+   
+   if(!res) {
+    alert('Please enter valid email id')
+   }
+   else  {
+    alert('Thank you')
+   }
+  }
+ </script>
+</head>
+<body>
+<form name="myform" action="#" method="post">
+ Enter Email ID <input type="text" id="email" /><br/>
+ <input type="button" value="Submit" onclick="checkEmail()"/>
+</form>
+</body>
+</html>

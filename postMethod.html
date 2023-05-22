@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://www.javatpoint.com/javafx-tutorial"></script>
+        <script>
+            $(document).ready(function(){
+                $(button).click(function(){
+                    $.post("demo_post.asp",{
+                        name:"Nandini Kokare",
+                        city:"Someshwarnagar"
+                    },
+                    function(data,status){
+                        alert("data: " + data + "\nStatus: " + status);
+                    });
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <button>send an http post request to a page and get the result back</button>
+    </body>
+</html>

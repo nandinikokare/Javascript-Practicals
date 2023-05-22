@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title>Status Bar</title>
+    <script type="text/javascript">
+    <!--      window.defaultStatus = "Welcome to the large URL page."
+   
+      function changeStatus() {
+        window.status = "Click me to go to the Unleashed home page."
+     }
+   
+     function changeDefaultStatus() {
+        window.defaultStatus = 
+        window.document.statusForm.messageList.options[window.document.statusForm.messageList.
+        selectedIndex].text
+     }
+    //-->
+    </script>
+</head>
+   
+<body>
+  <p>&#160;</p>
+  <p>&#160;</p>
+  <p align="center">
+    <font size="7" color="#008040">
+      <strong>http://www.java2s.com</strong>
+    </font>
+  </p>
+  <p align="center">
+    <a href="http://www.java2s.com" onmouseover="changeStatus();return true">Go...</a>
+  </p>
+  <p align=center>
+    <font size="1">
+      To change the default status bar message, select a message from the 
+      list below and click the Change button. 
+    </font>
+  </p>
+  <form name="statusForm" method="POST">
+   
+    <select name="messageList" size="1">
+      <option selected>Welcome to the large URL page.</option>
+      <option>A</option>
+      <option>B</option>
+      <option>C</option>
+    </select>    
+    <input type="button" name="Change" value="Change"
+       onclick="changeDefaultStatus()">
+  </form>
+</body>
+</html>

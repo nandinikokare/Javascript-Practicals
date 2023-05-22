@@ -1,0 +1,20 @@
+<html>
+<head>
+   <script>
+      function constructMailId() {
+         var fn = document.getElementById('fname').value
+         var sn = document.getElementById('sname').value
+         var email = fn.toLowerCase() + "." + sn.toLowerCase() + "@domainname.com"
+         alert('Your mailID is: ' + email)
+      }
+   </script>
+</head><body>
+   <form name="myform">
+      <p>
+         First name <input type="text" id="fname" /><br />
+         Surname <input type="text" id="sname" /><br />
+         <input type="button" value="Submit" onclick="constructMailId()" />
+      </p>
+   </form>
+</body>
+</html>
